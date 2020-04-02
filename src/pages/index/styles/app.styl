@@ -1,0 +1,161 @@
+body.calcite
+  background-color #ffffff !important
+
+#root-view
+  min-width 1264px
+  height 100%
+  //display flex
+  //flex-direction column
+  #root-header
+    z-index 9999
+    width 100%
+    min-width 1264px
+    &.absolute
+      header
+        background-color rgba(31, 42, 55, 0.8)
+        box-shadow 0 2px 3px 0 rgba(0, 0, 0, 0.3)
+    header
+      background #001529
+      height 40px
+      padding 0
+      .logoBox
+        height 24px
+        margin-left 12px
+        //padding 0 8px
+        //border-radius 4px
+        //&:hover
+        //  background rgba(209, 209, 240, 0.2)
+        .logoText
+          height 24px
+          vertical-align top
+      .has-group
+        .el-menu
+          display flex
+      .up-right
+        .el-dropdown
+          width 40px
+          height 40px
+          line-height 40px
+          cursor pointer
+          text-align center
+          vertical-align top
+          &:hover
+            color #fff
+            background #409EFF
+          &.userIcon
+            width 48px
+            .el-dropdown-link
+              width 48px
+              .avatar
+                margin-top 8px
+                width 24px
+                height 24px
+                border-radius 50%
+          .el-dropdown-link
+            display inline-block
+            width 40px
+            height 40px
+            i
+              vertical-align sub
+  //.up-right
+  //  width 228px
+  //  display flex
+  //  justify-content flex-end
+  //  > div
+  //    margin-right 12px
+  //    i.zmdi
+  //      line-height 24px
+  //  .red-dot
+  //    color white
+  //    background-color #F58F23
+  //    border-radius 50%
+  //    width 22px
+  //    height 22px
+  //    line-height 22px
+  //    text-align center
+  //  .avatar
+  //    width 24px
+  //    height 24px
+  //    border-radius 50%
+  .main-content
+    height calc(100% - 40px)
+    display flex
+    flex-direction column
+    overflow hidden
+    #root-main
+      flex-grow 1
+      height 100%
+      &.fpi-layout
+        height 100%
+        .fpi-left
+          height 100%
+          box-shadow 1px 0 0 0 #e4e7ed
+          overflow auto
+        .fpi-right
+          height 100%
+          padding 16px
+          overflow auto
+  > footer
+    height 60px
+    background-color black
+    color white
+    line-height 60px
+    padding-left 12px
+    text-align center
+
+.el-submenu__icon-arrow
+  font-size: 12px !important
+
+/**
+*顶部菜单样式补丁
+*/
+.el-menu
+  //border-bottom none!important
+  background #001B35
+  i.menuIcon
+    margin-right 8px
+    font-size 18px
+
+.el-menu--horizontal .el-submenu > .el-menu
+  top 48px
+
+.el-menu--horizontal .el-submenu
+  .el-submenu__title
+    padding 0 12px 0 18px
+    height 40px
+    line-height 40px
+    color #fff
+    i
+      color #fff
+    &:hover
+      background rgba(255, 255, 255, 0.2)
+      color: #fff
+      i
+        color #fff
+  .el-submenu__icon-arrow
+    margin-left 4px
+.el-menu--horizontal .el-menu-item:hover, .el-menu--horizontal .el-menu-item:focus
+  background #2196f3!important
+  color #fff
+  i
+    color #fff
+.el-menu--horizontal > .el-menu-item.is-active, .el-menu--horizontal > .el-submenu.is-active .el-submenu__title
+  color: #fff
+  i
+    color #fff
+  &:hover
+    background rgba(0,21,41,0.5) !important
+    color rgba(255,255,255,0.5) !important
+    i
+      color #47688A !important
+.first-menu
+  &>.el-menu-item
+    color #fff !important
+/**
+*穿梭框样式补丁
+*/
+//.el-transfer__buttons
+//padding 0 8px
+.el-menu--horizontal .el-menu-item
+  line-height 40px
+  height 40px

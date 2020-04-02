@@ -1,0 +1,34 @@
+<template lang="pug">
+  .main
+    div {{msg}}
+    .content 'Welcome back to Dren! We hope you are all ready to catch up with the West Bottom Badgers for another magical basketball season.'
+    
+</template>
+
+<script>
+export default {
+  name: 'HelloWorld',
+  props: {
+    msg: String
+  }
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.content {
+  color: #42b983;
+  font-size: 16px
+}
+</style>
