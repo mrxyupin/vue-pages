@@ -16,7 +16,7 @@
     "js-cookie": "^2.2.1",
     "lodash": "^4.17.15",
     "maptalks": "^0.47.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "perfect-scrollbar": "^1.5.0",
     "vue": "^2.6.11",
     "vue-photo-preview": "^1.1.3",
